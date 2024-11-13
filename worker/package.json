@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.10.4",
-    "puppeteer": "^23.7.1"
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "puppeteer": "^23.8.0"
   }
 }

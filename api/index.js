@@ -26,7 +26,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "password",
-  database: "gerador_certificado",
+  database: "geradorcertificado",
 });
 
 app.post("/diploma", (req, res) => {

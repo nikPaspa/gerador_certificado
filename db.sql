@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS gerador_certificado;
-USE gerador_certificado;
+CREATE DATABASE IF NOT EXISTS geradorcertificado;
+USE geradorcertificado;
 CREATE TABLE IF NOT EXISTS diplomas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255),

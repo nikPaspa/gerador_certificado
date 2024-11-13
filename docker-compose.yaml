@@ -3,7 +3,7 @@ services:
     image: mariadb:11
     environment:
       MARIADB_ROOT_PASSWORD: password
-      MARIADB_DATABASE: gerador_certificado
+      MARIADB_DATABASE: geradorcertificado
     ports:
       - 3306:3306
     volumes:
