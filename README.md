@@ -1,30 +1,30 @@
 # Passo a Passo de Configuração e Execução
 ## Instalar dependências na pasta api:
-* Abra o terminal dentro da pasta api.
-* Execute o comando:
+* **Abra o terminal dentro da pasta api.**
+* **Execute o comando:**
  ```
   npm install
 ```
 
 ## Instalar dependências na pasta worker
 
-* Abra outro terminal (ou na mesma janela, mas em outra aba) dentro da pasta worker.
-* Execute o comando:
+* **Abra outro terminal (ou na mesma janela, mas em outra aba) dentro da pasta worker.**
+* **Execute o comando:**
 ```
 npm install
 ```
 
 ## Configurar o banco de dados MySQL via Docker
 
-* Certifique-se de que o Docker esteja em execução.
-* Acesse o MySQL no terminal (ou via ferramenta de gerenciamento de banco de dados) e utilize a senha password para autenticação.
-* Crie e selecione o banco de dados executando:
+* **Certifique-se de que o Docker esteja em execução.**
+* **Acesse o MySQL no terminal (ou via ferramenta de gerenciamento de banco de dados) e utilize a senha password para autenticação.**
+* **Crie e selecione o banco de dados executando:**
 
 ```
 CREATE DATABASE geradorcertificado;
 USE geradorcertificado;
 ```
-* Crie a tabela diplomas caso não exista:
+* **Crie a tabela diplomas caso não exista:**
 
 ```
 CREATE TABLE IF NOT EXISTS diplomas (
@@ -45,23 +45,23 @@ CREATE TABLE IF NOT EXISTS diplomas (
 ```
 ## Executar a API e o Worker
 
-* Na pasta api, execute:
+* **Na pasta api, execute:**
 
 ```
 node index.js
 ```
-(Certifique-se de que o arquivo principal seja mesmo o index.js).
+*(Certifique-se de que o arquivo principal seja mesmo o index.js).*
 
-* Na pasta worker, execute:
+* **Na pasta worker, execute:**
 ```
 node index.js
 ```
-(Também confirme o nome do arquivo principal na pasta do worker).
+*(Também confirme o nome do arquivo principal na pasta do worker).*
 
 ## Fazer requisições via Postman (ou via curl no terminal)
 
-* A URL base para envio das requisições à API é http://localhost:3000.
-* Exemplo de criação de um diploma utilizando curl:
+* **A URL base para envio das requisições à API é http://localhost:3000.**
+* **Exemplo de criação de um diploma utilizando curl:**
 
 ```
 curl --location 'http://localhost:3000/diploma' \
@@ -80,7 +80,7 @@ curl --location 'http://localhost:3000/diploma' \
   "cargo": "Maria Pereira"
 }'
 ```
-Ou outro exemplo:
+**Ou outro exemplo:**
 ```
 curl --location 'http://localhost:3000/diploma' \
 --header 'Content-Type: application/json' \
